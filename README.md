@@ -72,13 +72,18 @@ Once the module provisions the AKS cluster, it provides several outputs, includi
 
 This module requires the following Terraform provider:
 
-azurerm (Azure Resource Manager): Ensure you use the latest compatible version of the provider. Learn more about the provider here.
+- **[azurerm](https://registry.terraform.io/providers/hashicorp/azurerm/latest)** (Azure Resource Manager): Ensure you are using the latest version compatible with the module.
+
 
 ## Requirements
 
-Terraform CLI version >= 1.0
-Azure CLI installed (if using local authentication)
-Azure Subscription: The module provisions resources on your Azure account.
+- **Terraform CLI version** `>= 1.0`
+  
+- **Azure CLI installed**
+  - Required for local authentication (if using Service Principal credentials).
+  
+- **Active Azure Subscription**
+  - Ensure that you have an active subscription in **Microsoft Azure**.
 
 ## Notes
 
