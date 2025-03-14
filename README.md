@@ -37,16 +37,9 @@ output "node_resource_group" {
 }
 ```
 
-### Example Outputs
-
-Once the module provisions the AKS cluster, it provides several outputs, including:
-
-- **Kube Config**: Raw Kubernetes configuration for your cluster.
-- **Node Resource Group**: Name of the resource group where worker node resources are managed.
-- **User-Assigned Identity ID**: The principal ID of the assigned identity.
-
-
 ## Inputs
+
+The following variables must be set to use this module:
 
 | Name | Description | Type | Default | Required |
 | :-- | :-- | :-- | :-- | :-- |
@@ -70,6 +63,13 @@ Once the module provisions the AKS cluster, it provides several outputs, includi
 | principal_object_id | The object ID of the AKS cluster's kubelet identity (used for authentication). |
 | uami_id | The principal ID of the user-assigned identity associated with the AKS control plane. |
 
+### Example Outputs
+
+Once the module provisions the AKS cluster, it provides several outputs, including:
+
+- **Kube Config**: Raw Kubernetes configuration for your cluster.
+- **Node Resource Group**: Name of the resource group where worker node resources are managed.
+- **User-Assigned Identity ID**: The principal ID of the assigned identity.
 
 ## Providers
 
