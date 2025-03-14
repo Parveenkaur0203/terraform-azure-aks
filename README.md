@@ -37,13 +37,13 @@ output "node_resource_group" {
 }
 ```
 
-Example Outputs:
+### Example Outputs
 
 Once the module provisions the AKS cluster, it provides several outputs, including:
 
-Kube Config: Raw Kubernetes configuration for your cluster.
-Node Resource Group: Name of the resource group where worker node resources are managed.
-User-Assigned Identity ID: The principal ID of the assigned identity.
+- **Kube Config**: Raw Kubernetes configuration for your cluster.
+- **Node Resource Group**: Name of the resource group where worker node resources are managed.
+- **User-Assigned Identity ID**: The principal ID of the assigned identity.
 
 ## Inputs
 
