@@ -82,7 +82,13 @@ Azure Subscription: The module provisions resources on your Azure account.
 
 ## Notes
 
-User-Assigned Identity: This module automatically provisions a user-assigned identity for the AKS control plane. You can use this identity for managing resources such as Azure Key Vault.
-Key Vault Secrets Provider: The Key Vault integration is optional and can be enabled using the key_vault_secrets_provider_enabled variable.
-If enabled, secrets rotation is configured with a default interval of 5 minutes.
-Cluster Configuration: The default cluster node pool uses a single VM of size Standard_D2_v2. You can modify this in the module's main.tf file.
+- **User-Assigned Identity**: 
+  This module automatically provisions a user-assigned identity for the AKS control plane. You can use this identity for managing resources such as Azure Key Vault.
+
+- **Key Vault Secrets Provider**: 
+  - The Key Vault integration is optional and can be enabled using the `key_vault_secrets_provider_enabled` variable.
+  - If enabled, secrets rotation is configured with a default interval of **5 minutes**.
+
+- **Cluster Configuration**:
+  - The default cluster node pool uses a single VM of size `Standard_D2_v2`.
+  - You can modify this configuration in the module's `main.tf` file.
