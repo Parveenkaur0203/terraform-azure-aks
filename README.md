@@ -45,6 +45,7 @@ Once the module provisions the AKS cluster, it provides several outputs, includi
 - **Node Resource Group**: Name of the resource group where worker node resources are managed.
 - **User-Assigned Identity ID**: The principal ID of the assigned identity.
 
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -53,6 +54,7 @@ Once the module provisions the AKS cluster, it provides several outputs, includi
 | resource_group_name | The name of the resource group for the AKS cluster. | string | n/a | Yes |
 | location | The Azure region where the AKS cluster will be provisioned. | string | n/a | Yes |
 | key_vault_secrets_provider_enabled | Whether to enable the Key Vault Secrets Provider integration with AKS. | bool | false | No |
+
 
 ## Outputs
 
@@ -67,6 +69,7 @@ Once the module provisions the AKS cluster, it provides several outputs, includi
 | host | The hostname of the Kubernetes API server. |
 | principal_object_id | The object ID of the AKS cluster's kubelet identity (used for authentication). |
 | uami_id | The principal ID of the user-assigned identity associated with the AKS control plane. |
+
 
 ## Providers
 
@@ -84,6 +87,7 @@ This module requires the following Terraform provider:
   
 - **Active Azure Subscription**
   - Ensure that you have an active subscription in **Microsoft Azure**.
+
 
 ## Notes
 
